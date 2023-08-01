@@ -49,16 +49,6 @@ class LibraryManager:
         else:
             self.borrowed_books[book_isbn] = person_id
             print(f"Book with ISBN '{book_isbn}' has been assigned to person with ID '{person_id}'.")
-
-   
-
- 
-
-
-
-
-
-
     def get_book_by_isbn(self, book_isbn):
         for book in self.books:
             if book.ISBN == book_isbn:
