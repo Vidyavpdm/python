@@ -41,7 +41,7 @@ class LibraryManager:
             print(f"User with ID '{person_id}' is not registered. Please register first.")
             return
         
-        book = self.get_book_by_isbn(book_isbn)
+        book = self.is_book_available(book_isbn)
         if not book:
             print(f"Book with ISBN '{book_isbn}' not found in LibraryManager.")
         elif book_isbn in self.borrowed_books:
